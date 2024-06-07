@@ -22,10 +22,6 @@
 
 # Docker CMD's
 
-### Build Image
-
-`docker build -t <define-image_name>`
-
 ### Run Docker Container
 
 `docker run -p 8080:8080 -d <image_name>`
@@ -33,6 +29,9 @@
 ### Export and Import docker image without dockerhub
 
 1. Build Image.
+
+   `docker build -t <define-image_name>`
+
 2. To Export, convert Image to .tar file from source sysytem by using
 
    `docker save <image_name> -o <file_name>.tar`
